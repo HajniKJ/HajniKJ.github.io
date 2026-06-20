@@ -181,6 +181,27 @@ body
     margin-bottom: 20px;
 }
 
+.about-with-image
+{
+    display: grid;
+    grid-template-columns: minmax(0,1fr) minmax(260px,360px);
+    align-items: end;
+    gap: 40px;
+}
+
+.about-profile
+{
+    width: 100%;
+    aspect-ratio: 4 / 5;
+
+    object-fit: cover;
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 6px 22px rgba(0,0,0,.12);
+}
+
 /* -------------------- */
 /* WARNING BANNER */
 /* -------------------- */
@@ -499,6 +520,18 @@ footer
     form
     {
         padding: 25px;
+    }
+
+    .about-with-image
+    {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .about-profile
+    {
+        max-width: 420px;
+        margin: auto;
     }
 }
 
